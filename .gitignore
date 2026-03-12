@@ -1,0 +1,13 @@
+# 操作系統產生的雜物
+.DS_Store
+Thumbs.db
+
+# 開發工具設定 (VS Code)
+.vscode/
+
+# 壓縮包（妳剛傳給我的那個 .zip 就不該上傳）
+*.zip
+*.tar.gz
+
+# 如果妳之後有用 npm 安裝套件
+node_modules/
