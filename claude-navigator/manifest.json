@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Claude Navigator",
+  "version": "1.0.0",
+  "description": "右側圓點導航，快速跳轉到 Claude 對話中的每個問題",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://claude.ai/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Claude Navigator"
+  }
+}
